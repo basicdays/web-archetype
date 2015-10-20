@@ -7,7 +7,7 @@ var assetsDir = path.resolve('./assets');
 var buildDir = path.resolve('./build');
 var nodeModulesDir = path.resolve('./node_modules');
 
-var port = 10011;
+var port = 10010;
 
 module.exports = {
     entry: {
@@ -19,7 +19,7 @@ module.exports = {
         path: buildDir,
         filename: '[name].js',
         chunkFilename: '[id].chunk.js',
-        publicPath: util.format('http://localhost:%s/', port),
+        publicPath: '/assets/',
     },
     devServer: {
         port: port,
@@ -36,7 +36,7 @@ module.exports = {
                 test: /\.less$/,
                 loader: ExtractTextPlugin.extract(
                     'css?sourceMap!' +
-//                    'autoprefixer?{browsers: "> 5%"}!' +
+                    'autoprefixer?{browsers: "> 5%"}!' +
                     'less?sourceMap'
                 ),
             },
