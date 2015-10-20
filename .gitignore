@@ -1,0 +1,14 @@
+# Project
+build/
+node_modules/
+
+# Editors
+.idea/
+*.swp
+*.kate-swp
+
+# File Managers
+.directory
+
+# Git temp files
+*.orig

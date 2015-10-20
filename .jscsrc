@@ -1,0 +1,14 @@
+{
+  "preset": "airbnb",
+  "maxErrors": 10,
+  "esnext": true,
+  "verbose": true,
+
+  "disallowMultipleLineBreaks": null,
+  "requireCurlyBraces": true,
+  "requirePaddingNewLinesAfterBlocks": null,
+  "safeContextKeyword": "self",
+  "validateIndentation": 4,
+
+  "excludeFiles": ["build/**"]
+}
